@@ -12,7 +12,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const fetchPets = async () => {
-    const res = await fetch("http://localhost:5000/api/pets");
+    const res = await fetch("https://pet-dog.onrender.com/api/pets");
     const data = await res.json();
     setPets(data);
   };
@@ -22,7 +22,7 @@ const App = () => {
   }, []);
 
   const handleAddPet = async (newPet) => {
-    const res = await fetch("http://localhost:5000/api/pets", {
+    const res = await fetch("https://pet-dog.onrender.com/api/pets", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newPet),
@@ -32,7 +32,7 @@ const App = () => {
   };
 
   const handleDeletePet = async (id) => {
-    const res = await fetch(`http://localhost:5000/api/pets/${id}`, {
+    const res = await fetch(`https://pet-dog.onrender.com/api/pets/${id}`, {
       method: "DELETE",
     });
 
