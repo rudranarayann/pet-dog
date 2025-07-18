@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import PetList from "./components/PetList";
 import AddPetForm from "./components/AddPetForm";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "./components/Searchbar";
 import Footer from "./components/Footer";
 import './index.css'
 
